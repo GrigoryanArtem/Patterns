@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AbstractFactory.Product
+namespace Decorator
 {
-    class ProductB1 : AbstractProductB
+    class ConcreteComponent : Component
     {
-        public override string ToString()
+        public override string Operation()
         {
-            return "Product B-1";
+            return "Component";
         }
     }
 }
