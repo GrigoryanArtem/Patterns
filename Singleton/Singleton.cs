@@ -8,11 +8,11 @@ namespace Singleton
 {
     class Singleton
     {
-        private int count;
+        private int _count;
 
         protected Singleton()
         {
-            count = 0;
+            _count = 0;
         }
 
         sealed private class SingletonCreated{
@@ -36,14 +36,14 @@ namespace Singleton
 
         public void Add()
         {
-            count++;
+            _count++;
         }
 
         public int Count
         {
             get
             {
-                return count;
+                return _count;
             }
         }
     }
